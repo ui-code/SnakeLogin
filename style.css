@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 300px;
+    height: 600px;
+    background: linear-gradient(to bottom, rgba(39, 170, 133, 0.75), rgba(37, 118, 184, 0.75)), url("https://images.pexels.com/photos/590045/pexels-photo-590045.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+i.email {
+    right: 20px;
+    top: 13px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+input {
+    height: 40px;
+    text-align: center;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 12px;
+}
+
+input.email {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+div.right::before {
+    position: absolute;
+    content: '';
+    border: 1px solid white;
+    width: 25px;
+    height: 40px;
+    right: -20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: none;
+}
+
+i.password {
+    left: 20px;
+    top: 13px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+input.password {
+    border-bottom: 1px solid white;
+    margin-top: -1px;
+}
+
+div.left::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: -1px;
+    height: 40px;
+    width: 25px;
+    border: 1px solid white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: none;
+}
+
+button.submit {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 12px;
+    height: 40px;
+}
+
+input[type="checkbox"] {
+    border: 1px solid white;
+    background: none;
+}
+
+label {
+    color: white;
+    font-size: 12px;
+}
+
+button.action {
+    font-size: 12px;
+    color: white;
+    background: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 0px;
+}
+
+h1 {
+    color: white;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+input:focus {
+    outline: none;
+}
